@@ -1,0 +1,318 @@
+<?php /* Tailwind Portfolio – Cyril Ampuan */ ?>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Cyril Ampuan – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Preahvihear&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .font-brand { font-family: 'Preahvihear', sans-serif; }
+  </style>
+</head>
+  <body class="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+   <!-- Particles Background -->
+  <div id="particles-js" class="fixed inset-0 -z-10"></div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white/80 dark:bg-black/80 backdrop-blur transition-colors duration-300">
+    <h1 class="w-8 h-10 text-2xl">Personal Portfolio</h1>
+    <div class="flex-1 flex justify-center">
+    <nav class="hidden md:flex gap-8 font-semibold text-lg text-gray-700 dark:text-gray-300 transition-colors duration-300">
+      <a href="#home" class="hover:text-purple-600">Home</a>
+      <a href="#about" class="hover:text-purple-600">About</a>
+      <a href="#projects" class="hover:text-purple-600">Projects</a>
+      <a href="#contact" class="hover:text-purple-600">Contact</a>
+    </nav>
+    </div>
+    <!-- Mobile burger -->
+    <button id="burger" class="md:hidden text-2xl">&#9776;</button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden fixed inset-0 top-[72px] bg-white/90 flex-col flex items-center gap-3 py-5 text-xl transition-colors duration-300 dark:bg-black/90 z-50 shadow-lg rounded-b-lg md:hidden">
+    <a href="#home" class="hover:text-purple-600">Home</a>
+    <a href="#about" class="hover:text-purple-600">About</a>
+    <a href="#projects" class="hover:text-purple-600">Projects</a>
+    <a href="#contact" class="hover:text-purple-600">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center pt-32 px-4">
+    <div class="w-48 h-48 rounded-full bg-gradient-to-b from-purple-600 to-black dark:to-gray-800 p-2 mb-6">
+      <img class="w-full h-full rounded-full object-cover" src="https://c.animaapp.com/mdbk7tais3uRFE/img/image-1.png" alt="Cyril">
+    </div>
+    <h1 class="font-brand text-4xl md:text-6xl mb-4">
+      Hi, I'm <span class="text-purple-600 dark:text-purple-400">Cyril G. Ampuan</span>...
+    </h1>
+    <p class="text-lg md:text-xl text-gray-700 dark:text-gray-400 max-w-3xl">
+      Experienced in Web Application, Software Development and UI/UX Design.
+      Crafting digital experiences that balance user needs & business goals.
+    </p>
+  </section>
+
+  <!-- Work -->
+  <section id="about" class="py-20 px-4">
+    <h2 class="font-brand text-3xl md:text-4xl text-center mb-14">Work Experience</h2>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+      <!-- Card 1 -->
+      <div class="bg-gradient-to-br from-[#130428] via-[#251043] to-[#38126d] rounded-xl p-6 shadow-xl hover:-translate-y-2 transition-transform">
+        <img class="w-28 mb-4" src="https://c.animaapp.com/mdbk7tais3uRFE/img/group-1935.png" alt="CIB on the Mobile">
+        <h3 class="font-semibold text-2xl mb-2">CIB on  the Mobile</h3>
+        <p class="text-gray-300 mb-4 text-sm">
+          Seamless digital client-onboarding tool. Designed to enhance user experience and streamline processes.
+        </p>
+        <a href="#" class="border border-purple-500 px-4 py-1 rounded-full text-sm hover:bg-purple-500 hover:text-black transition">Learn More</a>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-gradient-to-br from-[#130428] via-[#251043] to-[#38126d] rounded-xl p-6 shadow-xl hover:-translate-y-2 transition-transform">
+        <img class="w-28 mb-4" src="https://c.animaapp.com/mdbk7tais3uRFE/img/group-1938.png" alt="Project 2">
+        <h3 class="font-semibold text-2xl mb-2">Project 2</h3>
+        <p class="text-gray-300 mb-4 text-sm">
+          Short description here. Focused on enhancing user engagement and satisfaction.
+        </p>
+        <a href="#" class="border border-purple-500 px-4 py-1 rounded-full text-sm hover:bg-purple-500 hover:text-black transition">Learn More</a>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-gradient-to-br from-[#130428] via-[#251043] to-[#38126d] rounded-xl p-6 shadow-xl hover:-translate-y-2 transition-transform">
+        <img class="w-28 mb-4" src="https://c.animaapp.com/mdbk7tais3uRFE/img/icons.png" alt="Project 3">
+        <h3 class="font-semibold text-2xl mb-2">Project 3</h3>
+        <p class="text-gray-300 mb-4 text-sm">
+          Short description here. Aimed at improving usability and accessibility for all users.
+        </p>
+        <a href="#" class="border border-purple-500 px-4 py-1 rounded-full text-sm hover:bg-purple-500 hover:text-black transition">Learn More</a>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-gradient-to-br from-[#130428] via-[#251043] to-[#38126d] rounded-xl p-6 shadow-xl hover:-translate-y-2 transition-transform">
+        <img class="w-28 mb-4" src="https://c.animaapp.com/mdbk7tais3uRFE/img/group-2.png" alt="Project 4">
+        <h3 class="font-semibold text-2xl mb-2">Project 4</h3>
+        <p class="text-gray-300 mb-4 text-sm">
+          Short description here. Focused on delivering a seamless user experience across platforms.
+        </p>
+        <a href="#" class="border border-purple-500 px-4 py-1 rounded-full text-sm hover:bg-purple-500 hover:text-black transition">Learn More</a>
+      </div>
+    </div>
+    <!-- Skills -->
+<h2 class="font-brand text-3xl md:text-4xl text-center mt-20 mb-14">Skills & Tools</h2>
+
+<div class="max-w-5xl mx-auto">
+  <div class="col-span-3 text-center mb-10">
+    <p class="text-gray-400 mb-4">I specialize in creating user-centric designs and building robust applications using this <span class="font-semibold">tech stack</span>.</p>
+  </div>
+
+  <!-- Skill Cards Container -->
+  <div class="flex flex-wrap  justify-center gap-6 mb-10">
+      <img src="php.png" alt="PHP" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="PHP">
+      <img src="laravel.png" alt="Laravel" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="Laravel">
+      <img src="css.png" alt="CSS" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="CSS">
+      <img src="html.png" alt="HTML" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="HTML">
+      <img src="java.png" alt="JavaScript" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="Java">
+      <img src="figma.png" alt="Figma" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="Figma">
+      <img src="tailwind.png" alt="Tailwind CSS" class="w-24 h-24 md:h-28 transition-transform hover:scale-110" title="Tailwind CSS">
+      <img src="react.png" alt="React" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="React">
+      <img src="nodejs.png" alt="Node.js" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="Node.js">
+      <img src="git.png" alt="Git" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="Git">
+      <img src="javascript.png" alt="JavaScript" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="JavaScript">
+      <img src="sql.png" alt="MySQL" class="w-24 h-20 md:h-28 transition-transform hover:scale-110" title="SQL">
+</div>
+
+  </section>
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-4">
+    <h2 class="font-brand text-3xl md:text-4xl text-center mb-14">Featured Projects</h2>
+    <div class="max-w-5xl mx-auto flex flex-col gap-20">
+      <!-- Project 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1">
+          <span class="text-purple-400 font-semibold text-sm">Featured Project</span>
+          <h3 class="text-3xl font-semibold my-2">Spotify Dashboard</h3>
+          <p class="text-gray-400 mb-4">
+            Visualize your Spotify data: top tracks, artists, recent plays & smart playlist generator.
+          </p>
+        </div>
+        <img class="rounded-xl shadow-xl md:w-1/2" src="https://c.animaapp.com/mdbk7tais3uRFE/img/screenshot-2022-09-30-at-10-49-1.png" alt="">
+      </div>
+      <!-- Project 2 (reverse) -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+        <div class="flex-1">
+          <span class="text-purple-400 font-semibold text-sm">Featured Project</span>
+          <h3 class="text-3xl font-semibold my-2">Next-Gen Web App</h3>
+          <p class="text-gray-400 mb-4">
+            PWA with offline support, serverless backend & instant dark-mode toggle.
+          </p>
+        </div>
+        <img class="rounded-xl shadow-xl md:w-1/2" src="https://c.animaapp.com/mdbk7tais3uRFE/img/card-1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-4 text-center">
+    <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      <div class="max-w-xl lg:max-w-lg">
+        <h2 class="text-4xl font-semibold tracking-tight text-white">Contact for more info</h2>
+        <p class="mt-4 text-lg text-gray-300">Feel free to reach out via email for any inquiries and business opportunities.</p>
+        <div class="mt-6 flex max-w-md gap-x-4 flex-1 justify-center">
+          <a href="mailto:cyrilampuan55@gmail.com" class="flex-none rounded-md bg-indigo-500 px-3.5 py-3.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+            cyrilampuan55@gmail.com
+          </a>
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+              <path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <dt class="mt-4 text-base font-semibold text-white">Weekly articles</dt>
+          <dd class="mt-2 text-base/7 text-gray-400">Stay updated with my weekly articles and updates.</dd>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+              <path d="M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <dt class="mt-4 text-base font-semibold text-white">No spam</dt>
+          <dd class="mt-2 text-base/7 text-gray-400">No spam, only relevant updates.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div aria-hidden="true" class="absolute top-0 left-1/2 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
+    <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"></div>
+  </div>
+  </div>
+  
+  </section>
+
+  <!-- Footer -->
+   <div>
+    <div class="flex justify-center gap-10">
+      <a href="https://github.com"><img class="w-7 h-7 hover:scale-125 transition-transform" src="https://c.animaapp.com/mdbk7tais3uRFE/img/vector-3.svg" alt="GitHub"></a>
+      <a href="https://linkedin.com"><img class="w-7 h-7 hover:scale-125 transition-transform" src="https://c.animaapp.com/mdbk7tais3uRFE/img/vector-2.svg" alt="LinkedIn"></a>
+      <a href="https://twitter.com"><img class="w-7 h-7 hover:scale-125 transition-transform" src="https://c.animaapp.com/mdbk7tais3uRFE/img/vector-1.svg" alt="Twitter"></a>
+    </div>
+  </div>
+  <footer class="text-center text-sm text-gray-700 dark:text-gray-500 py-6">
+    © <?php echo date('Y'); ?> Cyril Ampuan. Built with Tailwind & ☕.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Mobile nav toggle
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+
+  // Add smooth scroll to top button
+  const scrollToTopBtn = document.createElement('button');
+  scrollToTopBtn.textContent = '↑';
+  scrollToTopBtn.className = 'fixed bottom-4 right-4 bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-purple-700 transition-colors';
+  scrollToTopBtn.style.display = 'none'; // Initially hidden
+  document.body.appendChild(scrollToTopBtn);
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  
+  // Add smooth scroll to sections
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Add scroll event to highlight active section in nav
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('text-purple-600', 'dark:text-purple-400');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('text-purple-600', 'dark:text-purple-400');
+      }
+    });
+  });
+
+  // Particles.js configuration
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50, density: { enable: true, value_area: 800 } },
+      color: { value: "#a855f7" }, // Purple Tailwind color
+      shape: { type: "circle" },
+      opacity: { value: 0.5, random: true },
+      size: { value: 3, random: true },
+      line_linked: { enable: true, distance: 150, color: "#a855f7", opacity: 0.4, width: 1 },
+      move: { enable: true, speed: 1, direction: "none", out_mode: "out" }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: true, mode: "push" }
+      },
+      modes: {
+        repulse: { distance: 100, duration: 0.4 },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+  // Prevent right-click context menu
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('keydown', function (e) {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+      (e.ctrlKey && e.shiftKey && e.key === 'C') ||
+      (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+      (e.ctrlKey && e.key === 'U')
+    ) {
+      e.preventDefault();
+    }
+  });
+  </script>
+  </body>
+</html>
